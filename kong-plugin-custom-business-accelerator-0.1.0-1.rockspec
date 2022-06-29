@@ -32,9 +32,10 @@ build = {
   type = "builtin",
   modules = {
     -- TODO: add any additional code files added to the plugin
-    ["kong.plugins."..plugin_name..".handler"] = "/usr/local/custom/kong/plugins/"..plugin_name.."/handler.lua",
-    ["kong.plugins."..plugin_name..".schema"] = "/usr/local/custom/kong/plugins/"..plugin_name.."/schema.lua",
-    ["kong.plugins."..plugin_name..".utils"] = "/usr/local/custom/kong/plugins/"..plugin_name.."/utils.lua",
-    ["kong.plugins."..plugin_name..".cachefunc"] = "/usr/local/custom/kong/plugins/"..plugin_name.."/cachefunc.lua"
+    ["kong.plugins."..plugin_name..".handler"] = "kong/plugins/"..plugin_name.."/handler.lua",
+    ["kong.plugins."..plugin_name..".schema"] = "kong/plugins/"..plugin_name.."/schema.lua",
+    ["kong.plugins."..plugin_name..".utils"] = "kong/plugins/"..plugin_name.."/utils.lua",
+    ["kong.plugins."..plugin_name..".cachefunc"] = "kong/plugins/"..plugin_name.."/cachefunc.lua"
+
   }
 }
